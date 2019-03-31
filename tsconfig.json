@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist",
+    "strict": true,
+    "noImplicitAny": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "target": "es5",
+    "jsx": "react",
+    "baseUrl": "./src",
+    "lib": [
+      "dom",
+      "es2015"
+    ]
+  },
+  "include": [
+    "./src/**/*"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "name": "borha-react-startup",
+  "version": "0.0.1",
+  "main": "src/index.ts",
+  "repository": "git@github.com:diajelovic/borha-react-startup.git",
+  "author": "Andrey Borha <diajelovic@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node ./dist/index.js",
+    "prepublishOnly": "yarn run build",
+    "build": "rm -Rf ./dist/* && tsc",
+    "build:watch": "tsc -w"
+  },
+  "devDependencies": {
+    "@types/co": "^4.6.0",
+    "@types/node": "^11.12.2",
+    "babel": "^6.23.0",
+    "prettier": "^1.16.4",
+    "tslint": "^5.14.0",
+    "typescript": "^3.4.1",
+    "webpack": "^4.29.6"
+  },
+  "dependencies": {
+    "co": "^4.6.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  }
+}
