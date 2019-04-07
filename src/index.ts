@@ -43,7 +43,7 @@ const main = async () => {
   const isInitialized: boolean = await initProject();
 
   if (isInitialized) {
-    await co(installModules());
+    await co(installModules);
   }
 
   const [seconds] = process.hrtime(startTime);
