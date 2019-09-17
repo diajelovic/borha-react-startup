@@ -7,22 +7,20 @@
   "license": "MIT",
   "scripts": {
     "start": "node ./dist/index.js",
-    "prepublishOnly": "yarn run build",
-    "build": "rm -Rf ./dist/* && tsc",
-    "build:watch": "tsc -w"
+    "prepublishOnly": "yarn build",
+    "build": "rm -Rf ./dist/* && tsc && yarn rename",
+    "build:watch": "tsc -w",
+    "rename": "mv ./dist/index.js ./dist/cli.js"
   },
   "devDependencies": {
     "@types/co": "^4.6.0",
-    "@types/node": "^11.12.2",
+    "@types/node": "^12.7.2",
     "babel": "^6.23.0",
     "prettier": "^1.16.4",
     "tslint": "^5.14.0",
-    "typescript": "^3.4.1",
-    "webpack": "^4.29.6"
+    "typescript": "^3.5.3"
   },
   "dependencies": {
-    "co": "^4.6.0",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "co": "^4.6.0"
   }
 }
