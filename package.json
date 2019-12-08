@@ -1,6 +1,6 @@
 {
   "name": "@diajelovic/borha-react-startup",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "main": "dist/cli.js",
   "repository": "git@github.com:diajelovic/borha-react-startup.git",
   "author": "Andrey Borha <diajelovic@gmail.com>",
