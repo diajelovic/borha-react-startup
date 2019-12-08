@@ -5,6 +5,9 @@
   "repository": "git@github.com:diajelovic/borha-react-startup.git",
   "author": "Andrey Borha <diajelovic@gmail.com>",
   "license": "MIT",
+  "bin": {
+    "borha-react-startup": "dist/cli.js"
+  },
   "scripts": {
     "start": "node ./dist/cli.js",
     "prepublishOnly": "yarn build",
